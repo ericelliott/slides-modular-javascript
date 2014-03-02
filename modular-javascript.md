@@ -94,18 +94,6 @@ foo(); // true
 
 -------------------------------------
 
-## Version using semver
-
-major.minor.patch
-
--------------------------------------
-
-* major = breaking changes
-* minor = new non-breaking features
-* patch = bug fixes, insignificant changes
-
--------------------------------------
-
 # Principles of Modularity
 
 Modules should be:
@@ -176,6 +164,21 @@ Open to extension, closed to modification
 
 * Easy - just don't export it!
 
+```
+// Not exported
+var fullName = function fullName(firstName, lastName) {
+  return firstName + ' ' + lastName;
+}
+
+module.exports = function person(options) {
+  instance.firstName = options.firstName;
+  instance.lastName = options.lastName;
+  instance.name = function name() {
+    return fullName(this.firstName, this.lastName);
+  }
+};
+```
+
 -------------------------------------
 
 ## KISS (Keep It Simple, Stupid)
@@ -203,4 +206,53 @@ Open to extension, closed to modification
 ~ Bruce Lee
 
 -------------------------------------
+
+# npm - not an acronym
+
+Node Packaged Modules (60k+175/day)
+
+-------------------------------------
+
+# Bundled with Node
+
+http://nodejs.org/download/
+
+-------------------------------------
+
+## Version using semver
+
+major.minor.patch
+
+-------------------------------------
+
+* major = breaking changes
+* minor = new non-breaking features
+* patch = bug fixes, insignificant changes
+
+-------------------------------------
+
+## package.json
+
+* name
+* version
+* author
+* description
+* keywords
+* repository
+* license
+
+-------------------------------------
+
+## more package.json
+
+* main
+* scripts
+* dependencies, bundledDependencies
+* devDependencies
+
+-------------------------------------
+
+## Run scripts
+
+`npm run <script-name>`
 
