@@ -1,0 +1,7 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Modular JavaScript With npm and Node Modules",
+    "packageVersion": "0.1.0",
+    "useSass": false
+  }
+}
