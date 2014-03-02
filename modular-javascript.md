@@ -40,6 +40,46 @@ _Eric Elliott_
 
 -------------------------------------
 
+# Why Node Style Modules?
+
+-------------------------------------
+
+
+
+
+
+
+## Stupid Simple Syntax
+
+-------------------------------------
+
+### Export Something
+
+```js
+'use strict'; // You should always do this.
+
+var foo = function () {
+  return true;
+};
+
+module.exports = foo;
+```
+-------------------------------------
+
+### Import Something
+
+```js
+var foo = require('./foo.js');
+
+foo(); // true
+```
+
+-------------------------------------
+
+### Unbeatable ecosystem
+
+-------------------------------------
+
 # Principles of Modularity
 
 Modules should be:
