@@ -9,7 +9,7 @@ _Eric Elliott_
 
 -------------------------------------
 
-![adobe](https://f.cloud.github.com/assets/364727/2303817/4b9a55dc-a1e8-11e3-874f-74118b6e28c7.jpeg)
+![adobe](adobe.jpeg)
 
 ![tout](https://raw.github.com/dilvie/fluent-prototypal-oo/master/tout.jpg)
  ![bandpage](https://raw.github.com/dilvie/fluent-prototypal-oo/master/bandpage.jpg)
@@ -82,7 +82,7 @@ foo(); // true
 
 ## Unbeatable ecosystem
 
-![module-counts](https://f.cloud.github.com/assets/364727/2303815/1a87865e-a1e8-11e3-83e7-29704df31738.png)
+![module-counts](module-counts.png)
 
 -------------------------------------
 
