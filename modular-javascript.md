@@ -35,10 +35,17 @@ _Eric Elliott_
 
 ## Maintain Separation of Concerns
 
-* Domain logic
-* Presentation
+-------------------------------------
 
-### Different Modules
+## Domain logic
+
+-------------------------------------
+
+## Presentation
+
+-------------------------------------
+
+# Different Modules
 
 -------------------------------------
 
