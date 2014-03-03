@@ -240,7 +240,8 @@ module.exports = function widget(options) {
 Stampit: Compose factory functions to inherit from multiple ancestors.
 ```js
 module.exports = function (options) {
-  return stampit.compose(widget, eventEmitter, list, touch, intfiniteScroll);
+  return stampit.compose(widget, eventEmitter,
+    list, touch, intfiniteScroll);
 };
 ```
 
