@@ -215,8 +215,10 @@ var myWidget = new Widget('clock');
 ---
 
 ## Do Export Factories
-var widget = require('widget');
+```js
+var widget = require('widget'),
 var myWidget = widget();
+```
 
 ---
 
