@@ -244,8 +244,8 @@ server.listen(3000, function () {
 
 ## Breaks open / closed principle
 ```js
-var Widget = require('widget');
-var myWidget = new Widget('clock');
+var Widget = require('widget'),
+  myWidget = new Widget('clock');
 ```
 
 ---
