@@ -237,7 +237,7 @@ module.exports = function widget(options) {
 
 ## Factory flexibility
 
-Stampit: Compose factory functions to inherit from multiple ancestors.
+Stampit: Compose factory functions.
 ```js
 module.exports = function (options) {
   return stampit.compose(widget, eventEmitter,
