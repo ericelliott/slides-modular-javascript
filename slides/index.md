@@ -164,8 +164,10 @@ Open to extension, closed to modification
 
 * Easy - just don't export it!
 
-```
-// Not exported
+---
+
+```js
+// Not exported.
 var fullName = function fullName(firstName, lastName) {
   return firstName + ' ' + lastName;
 }
@@ -199,10 +201,49 @@ module.exports = function person(options) {
 
 ---
 
-## Do Export Factories
+## Breaks open / closed principle
+```js
+var Widget = require('widget');
+var myWidget = new Widget('clock');
+```
 
 ---
 
+## Now you need to turn Widget into a factory...
+
+Breaking change. Violates open / closed principle.
+
+---
+
+## Do Export Factories
+var widget = require('widget');
+var myWidget = widget();
+
+---
+
+## Inside the widget factory:
+```js
+module.exports = function widget(options) {
+  return {
+    name: options.name,
+    el: document.createElement(options.tagName || 'div'),
+    template: '<div class="content"></div>'
+  }
+};
+```
+
+---
+
+## Factory flexibility
+
+Stampit: Compose factory functions to inherit from multiple ancestors.
+```js
+module.exports = function (options) {
+  return stampit.compose(widget, eventEmitter, list, touch, intfiniteScroll);
+};
+```
+
+---
 
 > It’s not the daily increase but daily decrease. Hack away at the unessential.
 ~ Bruce Lee
