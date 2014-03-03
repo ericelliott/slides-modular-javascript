@@ -194,6 +194,49 @@ module.exports = function person(options) {
 ---
 
 ## Export One Function
+* Principle of high cohesion
+
+---
+
+### Lame:
+```js
+module.exports.foo = function () { return 'foo'; };
+module.exports.bar = function () { return 'bar' };
+module.exports.baz = function () { return 'baz'; };
+```
+---
+```js
+var foo = require('lame').foo,
+  bar = require('lame').bar,
+  baz = require('lame').baz,
+
+  myFoo = foo();
+```
+
+---
+
+### Better - different modules.
+```js
+var foo = require('foo'),
+  bar = require('bar'),
+  baz = require('baz');
+---
+
+---
+
+### High cohesion warrants object factories:
+```js
+var http = require('http'),
+  server = http.createServer();
+
+server.listen(3000, function () {
+  setTimeout(function () {
+
+    server.close();
+
+  }, 30000)
+});
+```
 
 ---
 
