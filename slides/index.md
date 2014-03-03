@@ -220,7 +220,7 @@ var foo = require('lame').foo,
 var foo = require('foo'),
   bar = require('bar'),
   baz = require('baz');
----
+```
 
 ---
 
