@@ -208,9 +208,7 @@ module.exports.baz = function () { return 'baz'; };
 ```js
 var foo = require('lame').foo,
   bar = require('lame').bar,
-  baz = require('lame').baz,
-
-  myFoo = foo();
+  baz = require('lame').baz;
 ```
 
 ---
