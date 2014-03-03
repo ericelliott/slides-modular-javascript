@@ -142,7 +142,7 @@ Open to extension, closed to modification
 
 > "Program to an interface, not an implementation."
 
-~ The Gang of Four, "Design Patterns: Elements of Reusable Object-Oriented Software"
+~ GoF, "Design Patterns"
 
 ---
 
