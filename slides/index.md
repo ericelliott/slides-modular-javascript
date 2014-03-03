@@ -1,13 +1,13 @@
 > "Absorb what is useful, discard what is not, add what is uniquely your own."
 ~ Bruce Lee
 
--------------------------------------
+---
 
 # Modular JavaScript With npm and Node Modules
 
 _Eric Elliott_
 
--------------------------------------
+---
 
 ![adobe](adobe.jpeg)
 
@@ -15,47 +15,47 @@ _Eric Elliott_
  ![bandpage](https://raw.github.com/dilvie/fluent-prototypal-oo/master/bandpage.jpg)
  ![zumba](https://raw.github.com/dilvie/fluent-prototypal-oo/master/zumba.jpg)
 
--------------------------------------
+---
 
 ![Programming JavaScript Applications](http://akamaicovers.oreilly.com/images/0636920033141/lrg.jpg)
 
--------------------------------------
+---
 
 # Why Modules?
 
--------------------------------------
+---
 
 ## DRY (Don't Repeat Yourself)
 
--------------------------------------
+---
 
 ## Stay Organized
 
--------------------------------------
+---
 
 ## Maintain Separation of Concerns
 
--------------------------------------
+---
 
 ## Domain logic
 
--------------------------------------
+---
 
 ## Presentation
 
--------------------------------------
+---
 
 # Different Modules
 
--------------------------------------
+---
 
 # Why Node Style Modules?
 
--------------------------------------
+---
 
 ## Stupid Simple Syntax
 
--------------------------------------
+---
 
 ### Export Something
 
@@ -68,7 +68,7 @@ var foo = function () {
 
 module.exports = foo;
 ```
--------------------------------------
+---
 
 ### Import Something
 
@@ -78,65 +78,65 @@ var foo = require('./foo.js');
 foo(); // true
 ```
 
--------------------------------------
+---
 
 ## Unbeatable ecosystem
 
 ![module-counts](module-counts.png)
 
--------------------------------------
+---
 
 ## Great Package Management
 
--------------------------------------
+---
 
 ## Keep all modules in Git
 
--------------------------------------
+---
 
 # Principles of Modularity
 
 Modules should be:
 
--------------------------------------
+---
 
 ## Specialized
 
 DOT (Do One Thing)
 
--------------------------------------
+---
 
 ## Independent
 
 * Do something useful independent of the app.
 * Don't grab stuff from globals.
 
--------------------------------------
+---
 
 ## Decomposable
 
 * You should be able to test your modules outside your app.
 * Like component entertainment center.
 
--------------------------------------
+---
 
 ## Recomposable
 
 * Should be possible to rearrange the modules to build a different app.
 
--------------------------------------
+---
 
 ## Substitutable
 
 * You should be able to swap out one module for another, as long as they share the same public interface.
 
--------------------------------------
+---
 
 ## Open / Closed
 
 Open to extension, closed to modification
 
--------------------------------------
+---
 
 # Interfaces
 
@@ -144,21 +144,21 @@ Open to extension, closed to modification
 
 ~ The Gang of Four, "Design Patterns: Elements of Reusable Object-Oriented Software"
 
--------------------------------------
+---
 
 ## Interface is a Contract
 
 * Enables substitution
 
--------------------------------------
+---
 
 ## Obey the Open / Closed Principle
 
--------------------------------------
+---
 
 ## Export Your Public API
 
--------------------------------------
+---
 
 ## Encapsulate Your Implementation
 
@@ -179,57 +179,57 @@ module.exports = function person(options) {
 };
 ```
 
--------------------------------------
+---
 
 ## KISS (Keep It Simple, Stupid)
 
--------------------------------------
+---
 
 ## Keep It Stupid Simple
 
--------------------------------------
+---
 
 ## Export One Function
 
--------------------------------------
+---
 
 ## Don't Export Constructors
 
--------------------------------------
+---
 
 ## Do Export Factories
 
--------------------------------------
+---
 
 
 > It’s not the daily increase but daily decrease. Hack away at the unessential.
 ~ Bruce Lee
 
--------------------------------------
+---
 
 # npm - not an acronym
 
 Node Packaged Modules (60k+175/day)
 
--------------------------------------
+---
 
 # Bundled with Node
 
 http://nodejs.org/download/
 
--------------------------------------
+---
 
 ## Version using semver
 
 major.minor.patch
 
--------------------------------------
+---
 
 * major = breaking changes
 * minor = new non-breaking features
 * patch = bug fixes, insignificant changes
 
--------------------------------------
+---
 
 ## package.json
 
@@ -241,7 +241,7 @@ major.minor.patch
 * repository
 * license
 
--------------------------------------
+---
 
 ## more package.json
 
@@ -250,7 +250,7 @@ major.minor.patch
 * dependencies, bundledDependencies
 * devDependencies
 
--------------------------------------
+---
 
 ## Run scripts
 
