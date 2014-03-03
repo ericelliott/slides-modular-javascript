@@ -209,9 +209,8 @@ var myWidget = new Widget('clock');
 
 ---
 
-## Now you need to turn Widget into a factory...
-
-Breaking change. Violates open / closed principle.
+## Can't turn widget into factory
+* All callers are expecting to use `new`
 
 ---
 
