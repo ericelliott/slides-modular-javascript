@@ -430,7 +430,7 @@ $ browserify index.js -o bundle.js
 
 ## With source maps
 ```
-$browserify index.js -o bundle.js --debug
+$ browserify index.js -o bundle.js --debug
 ```
 
 ---
@@ -439,6 +439,25 @@ $browserify index.js -o bundle.js --debug
 ```
 $ browserify index.js | uglifyjs -c > bundle.min.js
 ```
+
+---
+
+## Or use a transform...
+```
+$ browserify -t uglifyify index.js -o bundle.min.js
+```
+
+---
+
+## Other transforms
+* Coffeescript
+* CSS requires
+* AMD
+* Bower
+* Component
+* ES6
+
+https://github.com/substack/node-browserify/wiki/list-of-transforms
 
 ---
 
