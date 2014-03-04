@@ -193,6 +193,13 @@ module.exports = function person(options) {
 
 ---
 
+> It’s not the daily increase but daily decrease.
+
+> Hack away at the unessential.
+~ Bruce Lee
+
+---
+
 ## Export One Function
 * Principle of high cohesion
 
@@ -285,13 +292,6 @@ module.exports = function (options) {
     list, touch, intfiniteScroll);
 };
 ```
-
----
-
-> It’s not the daily increase but daily decrease.
-
-> Hack away at the unessential.
-~ Bruce Lee
 
 ---
 
