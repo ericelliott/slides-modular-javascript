@@ -445,8 +445,10 @@ $ browserify index.js | uglifyjs -c > bundle.min.js
 ## Compile UMDs
 
 ```
-$ browserify -s
+$ browserify -s <namespace> index.js -o bundle.js
 ```
+
+Module will be at `window.namespace`
 
 ---
 
