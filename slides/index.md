@@ -394,6 +394,12 @@ $ npm run jshint
 
 ---
 
+```
+$ npm install browserify -g
+```
+
+---
+
 ## Compatible with most Node modules
 (~60k modules)
 
@@ -414,16 +420,31 @@ $ npm run jshint
 
 ---
 
-## Compile UMDs
-
+## Create your bundle
 ```
-$ browserify -s 
+$ browserify index.js -o bundle.js
 ```
 
 ---
 
+## With source maps
 ```
-npm install browserify -g
+$browserify index.js -o bundle.js --debug
+```
+
+---
+
+## Create your minified bundle
+```
+$ browserify index.js | uglifyjs -c > bundle.min.js
+```
+
+---
+
+## Compile UMDs
+
+```
+$ browserify -s index.js
 ```
 
 ---
