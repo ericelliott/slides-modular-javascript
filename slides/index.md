@@ -337,6 +337,37 @@ major.minor.patch
 * scripts
 * dependencies, bundledDependencies
 * devDependencies
+* private
+
+---
+
+## Public and private dependencies:
+"dependencies": {
+    "public": "git://github.com/user/repo.git#ref"
+  , "private": "git+ssh://git@github.com:user/repo.git#ref"
+}
+
+---
+
+```
+$ npm init
+```
+
+---
+
+```
+$ npm version <major|minor|patch>
+```
+
+---
+
+```
+# Publish publicly!
+# Get famous!
+# Make friends!
+
+$ npm publish
+```
 
 ---
 
@@ -344,3 +375,35 @@ major.minor.patch
 
 `npm run <script-name>`
 
+---
+
+## Good idea
+
+`npm run jshint`
+
+---
+
+# Browserify
+
+---
+
+> require(‘modules’) in the browser.
+
+---
+
+## Compatible with most Node modules
+(~60k modules)
+
+---
+
+```
+npm install browserify -g
+```
+
+---
+
+## Already using AMD? SWitch!
+
+https://github.com/thlorenz/browserify-ftw
+
+---
