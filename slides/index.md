@@ -342,10 +342,12 @@ major.minor.patch
 ---
 
 ## Public and private dependencies:
+```
 "dependencies": {
     "public": "git://github.com/user/repo.git#ref"
   , "private": "git+ssh://git@github.com:user/repo.git#ref"
 }
+```
 
 ---
 
