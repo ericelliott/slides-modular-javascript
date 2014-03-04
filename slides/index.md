@@ -380,8 +380,9 @@ $ npm publish
 ---
 
 ## Good idea
-
-`npm run jshint`
+```
+$ npm run jshint
+```
 
 ---
 
@@ -395,6 +396,29 @@ $ npm publish
 
 ## Compatible with most Node modules
 (~60k modules)
+
+---
+
+## Node core modules in the browser:
+* events
+* stream
+* path
+* url
+* assert
+* buffer
+* util
+* querystring
+* http
+* vm
+* crypto 
+
+---
+
+## Compile UMDs
+
+```
+$ browserify -s 
+```
 
 ---
 
