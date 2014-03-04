@@ -394,8 +394,9 @@ $ npm run jshint
 
 ---
 
+## Install
 ```
-$ npm install browserify -g
+$ npm install -g browserify
 ```
 
 ---
@@ -444,7 +445,7 @@ $ browserify index.js | uglifyjs -c > bundle.min.js
 ## Compile UMDs
 
 ```
-$ browserify -s index.js
+$ browserify -s
 ```
 
 ---
