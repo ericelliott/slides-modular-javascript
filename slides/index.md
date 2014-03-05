@@ -110,7 +110,7 @@ DOT (Do One Thing)
 
 * Do something useful independent of the app.
 * Don't grab stuff from globals.
-* Avoid implicit stateful dependencies
+* Avoid implicit stateful dependencies.
 
 ---
 
