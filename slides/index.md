@@ -110,6 +110,7 @@ DOT (Do One Thing)
 
 * Do something useful independent of the app.
 * Don't grab stuff from globals.
+* Avoid implicit stateful dependencies
 
 ---
 
@@ -294,6 +295,21 @@ module.exports = function (options) {
     list, touch, intfiniteScroll);
 };
 ```
+
+---
+
+## Modules instead of inheritance
+
+---
+
+## Better way to reuse stateless functions
+
+---
+
+## Objects are only needed for state
+* Configuration
+* User data
+* Domain objects
 
 ---
 
