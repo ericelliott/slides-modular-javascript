@@ -173,13 +173,15 @@ var fullName = function fullName(firstName, lastName) {
 }
 
 module.exports = function person(options) {
-  instance.firstName = options.firstName;
-  instance.lastName = options.lastName;
+  return {
+    firstName: options.firstName,
+    lastName: options.lastName,
 
-  // Hides internal implementation.
-  instance.name = function name() {
-    return fullName(this.firstName, this.lastName);
-  }
+    // Hides internal implementation.
+    name: function name() {
+      return fullName(this.firstName, this.lastName);
+    }
+  };
 };
 ```
 
